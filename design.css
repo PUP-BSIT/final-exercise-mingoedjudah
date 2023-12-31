@@ -82,7 +82,8 @@ body {
 #section5,
 #section6,
 #section7,
-#section9 {
+#section9,
+#countries_button {
     padding: 10px;
     padding-left: 30px;
     margin: 0 70px;
@@ -108,7 +109,8 @@ body {
 #section5,
 #section6,
 #section7,
-#section9 {
+#section9,
+#countries_button {
     margin-bottom: 70px;
 }
 
@@ -201,6 +203,19 @@ body {
 }
 
 #section9 button:hover {
+    background-color: #76999A;
+}
+
+#countries_button {
+    background-color: #86C9CA;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#countries_button:hover {
     background-color: #76999A;
 }
 
