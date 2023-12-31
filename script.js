@@ -47,11 +47,7 @@ function sortComments(order) {
   commentsContainer.innerHTML;
   comments.forEach(comment => {
     commentsContainer.appendChild(comment);
-  });
-}
-
-function navigateToCountries() {
-    window.location.href = "countries.html";
+  })
 }
 
 nameInput.addEventListener("input", checkInputs);
