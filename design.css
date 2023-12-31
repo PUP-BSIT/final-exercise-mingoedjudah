@@ -3,6 +3,7 @@ body {
 	margin: 0;
 	padding: 0;
     background-image: url('bg_design.gif');
+	background-attachment: fixed;
     background-color: #f2f2f2;
     background-size: cover;
     background-repeat: no-repeat;
@@ -20,7 +21,7 @@ body {
 	background-color: #333;
 	color: white;
 	text-align: center;
-	padding: 10px;
+	padding: 15px;
 }
 
 #section1 a {
@@ -28,43 +29,63 @@ body {
 	text-decoration: none;
 	margin: 0 15px;
 	padding: 10px 15px;
+	transition: background-color 0.2s, color 0.2s;
+}
+
+#section1 a:hover {
+    background-color: white;
+    color: #333;
+	padding: 15px 15px;
 }
 	
 #section2 {
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 30px;
-    margin: 0 20px;
-    background-color: #D6EAF8;
+    margin: 0 70px;
+    background-image: url('images/section_2_bg.jpg');
+	background-size: 100% 100%;
+    background-repeat: no-repeat;
     border: 1px solid #ccc;
     border-radius: 10px;
 }
 
-#section2 h2 {
+#section2 h1 {
     font-family: 'Bahnschrift', sans-serif;
     margin-bottom: 30px;
+    text-align: center;
 }
 
 #profile_image {
-    width: 150px;
-    height: auto;
-    margin-right: 20px;
+	margin-top: 20px;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+	transition: transform 0.3s;
+}
+
+#profile_image:hover {
+    transform: scale(1.1);
 }
 
 #profile_text {
-    flex: 1;
+    text-align: center;
     margin-top: 20px;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
 }
 
 #section3,
 #section4,
 #section5,
 #section6,
-#comment_form {
+#section7,
+#section9 {
     padding: 10px;
     padding-left: 30px;
-    margin: 0 20px;
+    margin: 0 70px;
     background-color: #D6EAF8;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -74,6 +95,7 @@ body {
 #section4 h2, 
 #section5 h2, 
 #section6 h2,
+#section7 h2,
 #team_comments h3 {
     font-family: 'Bahnschrift', sans-serif;
     margin-bottom: 20px;
@@ -85,29 +107,14 @@ body {
 #section4, 
 #section5,
 #section6,
-#comment_form {
-    margin-bottom: 20px;
+#section7,
+#section9 {
+    margin-bottom: 70px;
 }
 
-#section3 {
-    background-color: #D6EAF8 ;
-}
-
-#section4 {
-    background-color: #D6EAF8;
-}
-
-#section5 {
-    background-color: #D6EAF8;
-}
-
-#section6{
-    background-color: #D6EAF8;
-}
-
-#comment_form {
+#section9 {
     padding: 10px;
-    margin: 0 20px 20px;
+    margin: 0 70px 70px;
     background-color: #D6EAF8;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -148,7 +155,43 @@ body {
     margin-bottom: 10px;
 }
 
-#comment_form button {
+#section8 {
+    padding: 10px;
+    margin: 0 70px 70px;
+    background-color: #D6EAF8;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+#section8 h2 {
+    font-family: 'Bahnschrift', sans-serif;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.image-container img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin: 5px;
+    border-radius: 10px;
+	transition: transform 0.3s;
+}
+
+.image-container img:hover {
+    transform: scale(1.1);
+}
+
+#section9 button {
     background-color: #86C9CA;
     color: white;
     padding: 10px 20px;
@@ -157,7 +200,7 @@ body {
     cursor: pointer;
 }
 
-#comment_form button:hover {
+#section9 button:hover {
     background-color: #76999A;
 }
 
