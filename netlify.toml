@@ -1,4 +1,4 @@
 [[redirects]]
   from = "/*"
-  to = "/mingo_edjudah_exercise_16.html"
+  to = "https://final-exercise-mingoedjudah.netlify.app/:splat"
   status = 200
