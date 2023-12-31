@@ -1,1 +1,1 @@
-(https://final-exercise-mingoedjudah.netlify.app/)
+https://final-exercise-mingoedjudah.netlify.app/
